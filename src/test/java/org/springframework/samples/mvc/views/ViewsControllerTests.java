@@ -18,12 +18,10 @@ import org.springframework.test.web.servlet.MockMvc;
 public class ViewsControllerTests extends AbstractContextControllerTests {
 
 	private MockMvc mockMvc;
-
 	@Before
 	public void setup() throws Exception {
 		this.mockMvc = webAppContextSetup(this.wac).alwaysExpect(status().isOk()).build();
 	}
-
 	@Test
 	public void htmlView() throws Exception {
 		this.mockMvc.perform(get("/views/html"))

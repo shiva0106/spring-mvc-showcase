@@ -193,7 +193,6 @@
 		</dependency>
 	</dependencies>
 	<repositories>
-		<!-- For testing against latest Spring snapshots -->
 		<repository>
 			<id>org.springframework.maven.snapshot</id>
 			<name>Spring Maven Snapshot Repository</name>
